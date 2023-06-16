@@ -1,5 +1,5 @@
 import path from 'path'
-import { createLogger, format, transports } from 'winston'
+import { createLogger, format } from 'winston'
 import DailyRotateFile from 'winston-daily-rotate-file'
 const { combine, timestamp, label, printf } = format
 
@@ -16,7 +16,6 @@ const logger = createLogger({
   format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
         process.cwd(),
@@ -37,7 +36,6 @@ const errorlogger = createLogger({
   format: combine(label({ label: 'PH' }), timestamp(), myFormat),
   defaultMeta: { service: 'user-service' },
   transports: [
-    new transports.Console(),
     new DailyRotateFile({
       filename: path.join(
         process.cwd(),
