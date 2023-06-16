@@ -3,10 +3,15 @@ import config from '../../config'
 import ApiError from '../../errors/ApiError'
 import handleValidationError from '../../errors/handleValidationError'
 import { IGenericErrorMessage } from '../../interfaces/error'
-// import { errorlogger } from '../../shared/logger'
+import { errorlogger } from '../../shared/logger'
 
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
-  // config?.env === 'development' ? console.log('globalErrorHandler ~ ',error) : errorlogger.error('globalErrorHandler ~ ',error)
+  const serverFormat = config?.env
+  if (serverFormat === 'development') {
+    console.log('globalErrorHandler ~ ', error)
+  } else {
+    errorlogger.error('globalErrorHandler ~ ', error)
+  }
   let statusCode = 500
   let message = 'Somehting went wrong !'
   let errorMessages: IGenericErrorMessage[] = []

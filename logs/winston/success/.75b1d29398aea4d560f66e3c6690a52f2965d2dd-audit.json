@@ -1,20 +1,20 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\.75b1d29398aea4d560f66e3c6690a52f2965d2dd-audit.json",
+  "files": [
+    {
+      "date": 1686926196945,
+      "name": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\phu-2023-16-06-20-success.log",
+      "hash": "96e68bf0c36b2bef33d2531a6292b5f7291d1c34cb0f5790120b58b7ba873fc5"
     },
-    "auditLog": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\.75b1d29398aea4d560f66e3c6690a52f2965d2dd-audit.json",
-    "files": [
-        {
-            "date": 1686926196945,
-            "name": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\phu-2023-16-06-20-success.log",
-            "hash": "96e68bf0c36b2bef33d2531a6292b5f7291d1c34cb0f5790120b58b7ba873fc5"
-        },
-        {
-            "date": 1686927652739,
-            "name": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\phu-2023-16-06-21-success.log",
-            "hash": "7bc61ae00f616865ab9df756d8d83f0fcf5b724aebe97d770120e21a98eb70f6"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1686927652739,
+      "name": "D:\\1.PH_LEVEL_2\\NoSQL Backend\\tutorial\\university-management-auth-service\\logs\\winston\\success\\phu-2023-16-06-21-success.log",
+      "hash": "7bc61ae00f616865ab9df756d8d83f0fcf5b724aebe97d770120e21a98eb70f6"
+    }
+  ],
+  "hashType": "sha256"
 }
